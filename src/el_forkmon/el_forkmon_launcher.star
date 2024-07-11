@@ -2,7 +2,7 @@ shared_utils = import_module("../shared_utils/shared_utils.star")
 
 
 SERVICE_NAME = "el-forkmon"
-IMAGE_NAME = "ethpandaops/execution-monitor:master"
+IMAGE_NAME = "crytic/execution-monitor:master"
 
 HTTP_PORT_ID = "http"
 HTTP_PORT_NUMBER = 8080

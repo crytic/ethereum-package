@@ -1,4 +1,4 @@
-PYTHON_IMAGE = "ethpandaops/python-web3"
+PYTHON_IMAGE = "crytic/python-web3"
 CUSTOM_FLOOD_SERVICE_NAME = "mev-custom-flood"
 
 # The min/max CPU/memory that mev-custom-flood can use

@@ -55,7 +55,7 @@ You now have the ability to spin up a private Ethereum testnet or public devnet/
 
 Specifically, this [package][package-reference] will:
 
-1. Generate Execution Layer (EL) & Consensus Layer (CL) genesis information using [the Ethereum genesis generator](https://github.com/ethpandaops/ethereum-genesis-generator).
+1. Generate Execution Layer (EL) & Consensus Layer (CL) genesis information using [the Ethereum genesis generator](https://github.com/crytic/ethereum-genesis-generator).
 2. Configure & bootstrap a network of Ethereum nodes of *n* size using the genesis data generated above
 3. Spin up a [transaction spammer](https://github.com/MariusVanDerWijden/tx-fuzz) to send fake transactions to the network
 4. Spin up and connect a [testnet verifier](https://github.com/ethereum/merge-testnet-verifier)
@@ -220,8 +220,8 @@ participants:
   # - nethermind: nethermind/nethermind:latest
   # - besu: hyperledger/besu:develop
   # - reth: ghcr.io/paradigmxyz/reth
-  # - ethereumjs: ethpandaops/ethereumjs:master
-  # - nimbus-eth1: ethpandaops/nimbus-eth1:master
+  # - ethereumjs: crytic/ethereumjs:master
+  # - nimbus-eth1: crytic/nimbus-eth1:master
   el_image: ""
 
   # The log level string that this participant's EL client should log at
@@ -278,7 +278,7 @@ participants:
   # - nimbus: statusim/nimbus-eth2:multiarch-latest
   # - prysm: gcr.io/prysmaticlabs/prysm/beacon-chain:latest
   # - lodestar: chainsafe/lodestar:next
-  # - grandine: ethpandaops/grandine:develop
+  # - grandine: crytic/grandine:develop
   cl_image: ""
 
   # The log level string that this participant's CL client should log at
@@ -521,7 +521,7 @@ network_params:
   # Defaults to "https://ethpandaops-ethereum-node-snapshots.ams3.digitaloceanspaces.com/
   # If you have a local snapshot, you can set this to the local url:
   # network_snapshot_url_base = "http://10.10.101.21:10000/snapshots/"
-  # The snapshots are taken with https://github.com/ethpandaops/snapshotter
+  # The snapshots are taken with https://github.com/crytic/snapshotter
   network_sync_base_url: https://ethpandaops-ethereum-node-snapshots.ams3.digitaloceanspaces.com/
 
   # Preset for the network
@@ -566,12 +566,12 @@ tx_spammer_params:
   # A list of optional extra params that will be passed to the TX Spammer container for modifying its behaviour
   tx_spammer_extra_args: []
 
-# Configuration place for goomy the blob spammer - https:#github.com/ethpandaops/goomy-blob
+# Configuration place for goomy the blob spammer - https:#github.com/crytic/goomy-blob
 goomy_blob_params:
   # A list of optional params that will be passed to the blob-spammer comamnd for modifying its behaviour
   goomy_blob_args: []
 
-# Configuration place for the assertoor testing tool - https:#github.com/ethpandaops/assertoor
+# Configuration place for the assertoor testing tool - https:#github.com/crytic/assertoor
 assertoor_params:
   # Assertoor docker image to use
   # Leave blank to use the default image according to your network params
@@ -628,8 +628,8 @@ assertoor_params:
   # Run additional tests from external test definitions
   # Entries may be simple strings (link to the test file) or dictionaries with more flexibility
   # eg:
-  #   - https://raw.githubusercontent.com/ethpandaops/assertoor/master/example/tests/block-proposal-check.yaml
-  #   - file: "https://raw.githubusercontent.com/ethpandaops/assertoor/master/example/tests/block-proposal-check.yaml"
+  #   - https://raw.githubusercontent.com/crytic/assertoor/master/example/tests/block-proposal-check.yaml
+  #   - file: "https://raw.githubusercontent.com/crytic/assertoor/master/example/tests/block-proposal-check.yaml"
   #     config:
   #       someCustomTestConfig: "some value"
   tests: []
@@ -681,7 +681,7 @@ mev_params:
   # The image to use for MEV boost relay
   mev_relay_image: flashbots/mev-boost-relay
   # The image to use for the builder
-  mev_builder_image: ethpandaops/flashbots-builder:main
+  mev_builder_image: crytic/flashbots-builder:main
   # The image to use for the CL builder
   mev_builder_cl_image: sigp/lighthouse:latest
   # The image to use for mev-boost
@@ -720,7 +720,7 @@ xatu_sentry_enabled: false
 # Xatu Sentry params
 xatu_sentry_params:
   # The image to use for Xatu Sentry
-  xatu_sentry_image: ethpandaops/xatu:latest
+  xatu_sentry_image: crytic/xatu:latest
   # GRPC Endpoint of Xatu Server to send events to
   xatu_server_addr: localhost:8080
   # Enables TLS to Xatu Server
@@ -780,19 +780,19 @@ port_publisher:
 ```yaml
 participants:
   - el_type: geth
-    el_image: ethpandaops/geth:<VERKLE_IMAGE>
+    el_image: crytic/geth:<VERKLE_IMAGE>
     elExtraParams:
     - "--override.verkle=<UNIXTIMESTAMP>"
     cl_type: lighthouse
     cl_image: sigp/lighthouse:latest
   - el_type: geth
-    el_image: ethpandaops/geth:<VERKLE_IMAGE>
+    el_image: crytic/geth:<VERKLE_IMAGE>
     elExtraParams:
     - "--override.verkle=<UNIXTIMESTAMP>"
     cl_type: lighthouse
     cl_image: sigp/lighthouse:latest
   - el_type: geth
-    el_image: ethpandaops/geth:<VERKLE_IMAGE>
+    el_image: crytic/geth:<VERKLE_IMAGE>
     elExtraParams:
     - "--override.verkle=<UNIXTIMESTAMP>"
     cl_type: lighthouse

@@ -122,9 +122,9 @@ def get_config(
     if assertoor_params.image != "":
         IMAGE_NAME = assertoor_params.image
     elif network_params.preset == "minimal":
-        IMAGE_NAME = "ethpandaops/assertoor:minimal-preset"
+        IMAGE_NAME = "crytic/assertoor:minimal-preset"
     else:
-        IMAGE_NAME = "ethpandaops/assertoor:latest"
+        IMAGE_NAME = "crytic/assertoor:latest"
 
     return ServiceConfig(
         image=IMAGE_NAME,

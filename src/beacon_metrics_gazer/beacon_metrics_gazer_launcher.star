@@ -3,7 +3,7 @@ prometheus = import_module("../prometheus/prometheus_launcher.star")
 
 
 SERVICE_NAME = "beacon-metrics-gazer"
-IMAGE_NAME = "ethpandaops/beacon-metrics-gazer:master"
+IMAGE_NAME = "crytic/beacon-metrics-gazer:master"
 
 HTTP_PORT_ID = "http"
 HTTP_PORT_NUMBER = 8080

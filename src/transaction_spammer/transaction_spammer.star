@@ -33,7 +33,7 @@ def get_config(
     electra_fork_epoch,
     node_selectors,
 ):
-    tx_spammer_image = "ethpandaops/tx-fuzz:master"
+    tx_spammer_image = "crytic/tx-fuzz:master"
 
     cmd = [
         "spam",

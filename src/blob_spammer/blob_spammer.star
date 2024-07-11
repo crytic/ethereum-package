@@ -1,4 +1,4 @@
-IMAGE_NAME = "ethpandaops/tx-fuzz:master"
+IMAGE_NAME = "crytic/tx-fuzz:master"
 SERVICE_NAME = "blob-spammer"
 
 ENTRYPOINT_ARGS = ["/bin/sh", "-c"]

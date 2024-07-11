@@ -36,7 +36,7 @@
 * add blutgang rpc load balancer ([#569](https://github.com/crytic/ethereum-package/issues/569)) ([1be5f95](https://github.com/crytic/ethereum-package/commit/1be5f9542cf43b7b5afc3f565358b50dfbb81d50))
 * add dugtrio beacon load balancer ([#568](https://github.com/crytic/ethereum-package/issues/568)) ([56d2fa3](https://github.com/crytic/ethereum-package/commit/56d2fa38e59018fa331c12a271a906ec4fe67e6e))
 * add new assertoor test to per ci jobs ([#545](https://github.com/crytic/ethereum-package/issues/545)) ([3005d46](https://github.com/crytic/ethereum-package/commit/3005d46d60970be18e66f6a7f590d0b4689e84f4))
-* use new rpc snooper from `ethpandaops/rpc-snooper` ([#567](https://github.com/crytic/ethereum-package/issues/567)) ([5676f0d](https://github.com/crytic/ethereum-package/commit/5676f0dd4d62ee25a7f8ca2959596e419743916d))
+* use new rpc snooper from `crytic/rpc-snooper` ([#567](https://github.com/crytic/ethereum-package/issues/567)) ([5676f0d](https://github.com/crytic/ethereum-package/commit/5676f0dd4d62ee25a7f8ca2959596e419743916d))
 
 
 ### Bug Fixes
@@ -321,7 +321,7 @@
 * return data about pariticpants even if no additional services are launched ([#273](https://github.com/crytic/ethereum-package/issues/273)) ([d29f98e](https://github.com/crytic/ethereum-package/commit/d29f98e580afeca3a5d6d305f607d6f297606b9b))
 * set MEV image to 0.26.0 and complain if capella is zero with MEV set to full ([#261](https://github.com/crytic/ethereum-package/issues/261)) ([9dfc4de](https://github.com/crytic/ethereum-package/commit/9dfc4de19045ee2fd5be4eac31c341921d984e3d))
 * use 0.27 as the mev boost image ([839af19](https://github.com/crytic/ethereum-package/commit/839af1986480dec245b03e91a927d693526cd1a1))
-* use ethpandaops/erigon as its multiarch ([839af19](https://github.com/crytic/ethereum-package/commit/839af1986480dec245b03e91a927d693526cd1a1))
+* use crytic/erigon as its multiarch ([839af19](https://github.com/crytic/ethereum-package/commit/839af1986480dec245b03e91a927d693526cd1a1))
 
 ## [0.5.1](https://github.com/crytic/ethereum-package/compare/0.5.0...0.5.1) (2023-09-28)
 

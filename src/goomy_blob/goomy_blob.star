@@ -1,5 +1,5 @@
 SERVICE_NAME = "goomy-blob-spammer"
-IMAGE_NAME = "ethpandaops/goomy-blob:master"
+IMAGE_NAME = "crytic/goomy-blob:master"
 
 ENTRYPOINT_ARGS = ["/bin/sh", "-c"]
 

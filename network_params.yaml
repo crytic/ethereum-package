@@ -106,7 +106,7 @@ persistent: false
 mev_type: null
 mev_params:
   mev_relay_image: flashbots/mev-boost-relay
-  mev_builder_image: ethpandaops/flashbots-builder:main
+  mev_builder_image: crytic/flashbots-builder:main
   mev_builder_cl_image: sigp/lighthouse:latest
   mev_boost_image: flashbots/mev-boost
   mev_boost_args: ["mev-boost", "--relay-check"]
@@ -124,7 +124,7 @@ mev_params:
     interval_between_transactions: 1
 xatu_sentry_enabled: false
 xatu_sentry_params:
-  xatu_sentry_image: ethpandaops/xatu-sentry
+  xatu_sentry_image: crytic/xatu-sentry
   xatu_server_addr: localhost:8000
   xatu_server_tls: false
   xatu_server_headers: {}

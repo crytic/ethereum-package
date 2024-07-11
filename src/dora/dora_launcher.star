@@ -94,9 +94,9 @@ def get_config(
     )
 
     if network_params.preset == "minimal":
-        IMAGE_NAME = "ethpandaops/dora:minimal-preset"
+        IMAGE_NAME = "crytic/dora:minimal-preset"
     else:
-        IMAGE_NAME = "ethpandaops/dora:latest"
+        IMAGE_NAME = "crytic/dora:latest"
 
     return ServiceConfig(
         image=IMAGE_NAME,

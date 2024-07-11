@@ -6,12 +6,12 @@ genesis_constants = import_module(
 
 DEFAULT_EL_IMAGES = {
     "geth": "ethereum/client-go:latest",
-    "erigon": "ethpandaops/erigon:devel",
+    "erigon": "crytic/erigon:devel",
     "nethermind": "nethermindeth/nethermind:master",
     "besu": "hyperledger/besu:latest",
     "reth": "ghcr.io/paradigmxyz/reth",
-    "ethereumjs": "ethpandaops/ethereumjs:master",
-    "nimbus": "ethpandaops/nimbus-eth1:master",
+    "ethereumjs": "crytic/ethereumjs:master",
+    "nimbus": "crytic/nimbus-eth1:master",
 }
 
 DEFAULT_CL_IMAGES = {
@@ -20,16 +20,16 @@ DEFAULT_CL_IMAGES = {
     "nimbus": "statusim/nimbus-eth2:multiarch-latest",
     "prysm": "gcr.io/prysmaticlabs/prysm/beacon-chain:latest",
     "lodestar": "chainsafe/lodestar:latest",
-    "grandine": "ethpandaops/grandine:master",
+    "grandine": "crytic/grandine:master",
 }
 
 DEFAULT_CL_IMAGES_MINIMAL = {
-    "lighthouse": "ethpandaops/lighthouse:stable-minimal",
+    "lighthouse": "crytic/lighthouse:stable-minimal",
     "teku": "consensys/teku:latest",
-    "nimbus": "ethpandaops/nimbus-eth2:stable-minimal",
-    "prysm": "ethpandaops/prysm-beacon-chain:develop-minimal",
+    "nimbus": "crytic/nimbus-eth2:stable-minimal",
+    "prysm": "crytic/prysm-beacon-chain:develop-minimal",
     "lodestar": "chainsafe/lodestar:latest",
-    "grandine": "ethpandaops/grandine:master-minimal",
+    "grandine": "crytic/grandine:master-minimal",
 }
 
 DEFAULT_VC_IMAGES = {
@@ -38,16 +38,16 @@ DEFAULT_VC_IMAGES = {
     "nimbus": "statusim/nimbus-validator-client:multiarch-latest",
     "prysm": "gcr.io/prysmaticlabs/prysm/validator:latest",
     "teku": "consensys/teku:latest",
-    "grandine": "ethpandaops/grandine:master",
+    "grandine": "crytic/grandine:master",
 }
 
 DEFAULT_VC_IMAGES_MINIMAL = {
-    "lighthouse": "ethpandaops/lighthouse:stable-minimal",
+    "lighthouse": "crytic/lighthouse:stable-minimal",
     "lodestar": "chainsafe/lodestar:latest",
-    "nimbus": "ethpandaops/nimbus-validator-client:stable-minimal",
-    "prysm": "ethpandaops/prysm-validator:develop-minimal",
+    "nimbus": "crytic/nimbus-validator-client:stable-minimal",
+    "prysm": "crytic/prysm-validator:develop-minimal",
     "teku": "consensys/teku:latest",
-    "grandine": "ethpandaops/grandine:master-minimal",
+    "grandine": "crytic/grandine:master-minimal",
 }
 
 # Placeholder value for the deneb fork epoch if electra is being run
@@ -860,7 +860,7 @@ def get_default_assertoor_params():
 
 def get_default_xatu_sentry_params():
     return {
-        "xatu_sentry_image": "ethpandaops/xatu:latest",
+        "xatu_sentry_image": "crytic/xatu:latest",
         "xatu_server_addr": "localhost:8080",
         "xatu_server_headers": {},
         "xatu_server_tls": False,

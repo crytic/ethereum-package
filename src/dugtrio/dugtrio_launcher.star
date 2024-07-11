@@ -9,7 +9,7 @@ DUGTRIO_CONFIG_FILENAME = "dugtrio-config.yaml"
 
 DUGTRIO_CONFIG_MOUNT_DIRPATH_ON_SERVICE = "/config"
 
-IMAGE_NAME = "ethpandaops/dugtrio:latest"
+IMAGE_NAME = "crytic/dugtrio:latest"
 
 # The min/max CPU/memory that dugtrio can use
 MIN_CPU = 100
